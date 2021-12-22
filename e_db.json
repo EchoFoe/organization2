@@ -1,0 +1,152 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$ZiyHSQYJuLxZjstphBWxZJ$8eMDg7fdEvuDqTDVDaunpX8ko5QzIwMWLl1pZCNmHhY=",
+        "last_login": "2021-12-22T10:02:27.661Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-12-22T07:51:43.539Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "staff.department",
+    "pk": 1,
+    "fields": {
+        "name": "IT",
+        "is_active": true,
+        "created": "2021-12-22T07:53:22Z"
+    }
+},
+{
+    "model": "staff.department",
+    "pk": 2,
+    "fields": {
+        "name": "Реклама",
+        "is_active": true,
+        "created": "2021-12-22T08:02:54Z"
+    }
+},
+{
+    "model": "staff.department",
+    "pk": 3,
+    "fields": {
+        "name": "Оптовые продажи",
+        "is_active": true,
+        "created": "2021-12-22T08:04:43Z"
+    }
+},
+{
+    "model": "staff.employee",
+    "pk": 1,
+    "fields": {
+        "last_name": "Эхо",
+        "first_name": "Павел",
+        "middle_name": "Дмитриевич",
+        "photo": "photo_of_staff/man.png",
+        "function_position": "Разработчик web и мультимедийных приложений",
+        "salary": "100000.0",
+        "department": 1,
+        "is_active": true,
+        "created": "2021-12-22T07:52:26Z"
+    }
+},
+{
+    "model": "staff.employee",
+    "pk": 2,
+    "fields": {
+        "last_name": "Яковлев",
+        "first_name": "Алексей",
+        "middle_name": "Сергеевич",
+        "photo": "photo_of_staff/man_xhZq6Sd.png",
+        "function_position": "Разработчик ПО",
+        "salary": "90000.0",
+        "department": 1,
+        "is_active": true,
+        "created": "2021-12-22T08:01:32Z"
+    }
+},
+{
+    "model": "staff.employee",
+    "pk": 3,
+    "fields": {
+        "last_name": "Коцарь",
+        "first_name": "Анастасия",
+        "middle_name": "Геннадьевна",
+        "photo": "photo_of_staff/woman.png",
+        "function_position": "Руководитель отдела рекламы",
+        "salary": "80000.0",
+        "department": 2,
+        "is_active": true,
+        "created": "2021-12-22T08:02:27Z"
+    }
+},
+{
+    "model": "staff.employee",
+    "pk": 4,
+    "fields": {
+        "last_name": "Иволга",
+        "first_name": "Юлия",
+        "middle_name": "Владимировна",
+        "photo": "photo_of_staff/woman_sJSMwD3.png",
+        "function_position": "Пиар-менеджер",
+        "salary": "45000.0",
+        "department": 2,
+        "is_active": true,
+        "created": "2021-12-22T08:03:19Z"
+    }
+},
+{
+    "model": "staff.employee",
+    "pk": 5,
+    "fields": {
+        "last_name": "Дородных",
+        "first_name": "Надежда",
+        "middle_name": "Валерьевна",
+        "photo": "photo_of_staff/woman_qSBcVDn.png",
+        "function_position": "Старший супервайзер",
+        "salary": "50000.0",
+        "department": 3,
+        "is_active": true,
+        "created": "2021-12-22T08:03:52Z"
+    }
+},
+{
+    "model": "staff.employee",
+    "pk": 6,
+    "fields": {
+        "last_name": "Зубков",
+        "first_name": "Денис",
+        "middle_name": "Юрьевич",
+        "photo": "photo_of_staff/man_RY7VICv.png",
+        "function_position": "1с программист",
+        "salary": "35000.0",
+        "department": 1,
+        "is_active": true,
+        "created": "2021-12-22T08:05:03Z"
+    }
+},
+{
+    "model": "staff.employee",
+    "pk": 7,
+    "fields": {
+        "last_name": "Булко",
+        "first_name": "Анастасия",
+        "middle_name": "Александровна",
+        "photo": "photo_of_staff/woman_CaRNrnt.png",
+        "function_position": "Супервайзер",
+        "salary": "30000.0",
+        "department": 3,
+        "is_active": true,
+        "created": "2021-12-22T08:06:03Z"
+    }
+}
+]
