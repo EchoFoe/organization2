@@ -53,3 +53,21 @@ class Employee(models.Model):
 
     def get_absolute_url(self):
         return reverse('staff:employee_detail', args=[self.id])
+
+
+# class Lead(models.Model):
+#     name = models.CharField(max_length=200, verbose_name='Имя руководителя')
+#     is_active = models.BooleanField(default=True, verbose_name='Актуальность')
+#     created = models.DateTimeField(blank=True, null=True, default=timezone.now, verbose_name='Дата создания записи')
+
+
+class Project(models.Model):
+    name = models.CharField(max_length=200, verbose_name='Наименование проекта')
+    department = models.ForeignKey(Department, on_delete=models.CASCADE, related_name='projects',
+                                   verbose_name='Департамент')
+    lead = models.ForeignKey(Employee, on_delete=models.CASCADE, related_name='projects',
+                             verbose_name='Руководитель проекта')
+    employees_list = models.ManyToManyField(Employee, default=None, blank=True, related_name='employees_set',
+                                            verbose_name='Список сотрудников')
+    is_active = models.BooleanField(default=True, verbose_name='Актуальность')
+    created = models.DateTimeField(blank=True, null=True, default=timezone.now, verbose_name='Дата создания записи')

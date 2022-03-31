@@ -9,6 +9,7 @@ schema_view = get_swagger_view(title='Organization API')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('swagger/', schema_view),
+    path('api-auth/', include('rest_framework.urls')),
     path('', include('staff.urls', namespace='staff')),
 ]\
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
